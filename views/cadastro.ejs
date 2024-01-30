@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: rgba(51, 0, 0, 0.9);
+            padding: 10px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+            padding: 0px;
+        }
+
+        .name {
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 0px;
+            margin-right: 10px;
+        }
+
+        .name span {
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .right-nav {
+            text-align: right;
+            margin-bottom: 0%;
+        }
+
+        .right-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 60px;
+        }
+
+        .signup-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .signup-form h2 {
+            color: rgba(51, 0, 0, 0.9);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: rgba(51, 0, 0, 0.9);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #6d0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="name">ANNELY <br>
+                <span>LETÍCIA</span>
+            </div>
+        </div>
+        <div class="right-nav">
+            <a href="login.html">Login</a>
+            <a href="blog.html">Home</a>
+        </div>
+    </header>
+    <div class="container">
+        <form class="signup-form" method="post" action="signup.php">
+            <h2>Cadastro</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

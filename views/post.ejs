@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Postagem</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;;
+            margin: 0px;
+    
+        }
+
+        .name {
+        font-size: 5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 0px;
+        }
+
+        .name span {
+        font-weight: 900;
+        letter-spacing: 2px;
+        }
+
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(18, 110, 38);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(18, 110, 38);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="name">NOVA <br>
+        <span>POSTAGEM</span>
+    </div>
+<br>
+    <form action="/submit_post" method="post">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="author">Autor:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="content">Conteúdo:</label>
+        <textarea id="content" name="content" rows="8" required></textarea>
+
+        <button type="submit">Publicar</button>
+        <button type="submit"><a href="blog.html">Sair</a></button>
+    </form>
+
+</body>
+</html>
